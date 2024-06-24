@@ -46,7 +46,6 @@ function crearSecuencia($titulo, $descripcion, $objetivos, $curso, $elicitar, $e
         //echo "Secuencia creada con éxito";
         //return true; // Éxito
         header("Location: index.php?timestamp=" . time());
-        exit; // Asegurar que el script se detenga después de redirigir
     } else {
         echo "Error al crear la secuencia";
         return false; // Falla
@@ -79,7 +78,7 @@ function actualizarSecuencia($id, $titulo, $descripcion, $objetivos, $curso, $el
     $resultado = mysqli_query($conn, $sql);
 
     if ($resultado) {
-        echo "La consulta se ejecutó correctamente.";
+        //echo "La consulta se ejecutó correctamente.";
         header("Location: index.php?timestamp=". time());
     } else {
         echo "Error al ejecutar la consulta: " . mysqli_error($conn);

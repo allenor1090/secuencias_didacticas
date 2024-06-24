@@ -319,7 +319,7 @@
                     $('#secuencia-explorar').text(secuencia.explorar);
                     $('#secuencia-explicar').text(secuencia.explicar);
                     $('#secuencia-elaborar').text(secuencia.elaborar);
-                    $('#secuencia-etextuar').text(secuencia.evaluar);
+                    $('#secuencia-evaluar').text(secuencia.evaluar);
                     $('#secuencia-extender').text(secuencia.extender);
 
                     // Abre el modal
